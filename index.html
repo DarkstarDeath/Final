@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROYECTO</title>
+
+
+    <link rel="stylesheet" href="Estilo1.css" type=""> <!--enlace para vincular mi hoja de estilo-->
+
+
+</head>
+
+<body>
+    <div id="container" > <!--div contiene toda la pagina web (es una caja con ciertas medidas)-->
+
+     <!--header style="border: 3px rgb(26, 12, 22) solid; background-color: aqua;"-->
+     <header> <!--es una caja que hace referencia a la cabezera del sitio web-->
+         <h1>TIENDA GAMER</h1>
+    </header>
+
+    <nav> <!--nav me define una barra de navegacion-->
+         <ul class="menu">
+            <li><a href="#">Inicio</a></li>
+            <li id="Historia" onmouseover="ver(1)" onmouseout="ocultar(1)"><a href="pagina1.html" target="_blank">Antecedentes</a>
+                <div id="subseccion1">
+                    <p><a href="https://www.epicgames.com/site/es-ES/home"  target="_blank">Epic Games</a></p>
+                    <p><a href="https://www.xbox.com/es-MX"  target="_blank">Xbox</a></p>
+                    
+                </div>
+            </li>   
+            <li onmouseover="ver(2)" onmouseout="ocultar(2)"><a href="https://vandal.elespanol.com/juegos/0/videojuegos"  target="_blank">Catalogo</a>
+                 <div id="subseccion2">
+                    <p><a href="https://www.playstation.com/es-mx/"  target="_blank">Playstation</a></p>
+                    <p><a href="https://store.steampowered.com/?l=spanish"  target="_blank">Steam</a></p>
+                    
+                 </div>
+            </li>     
+               
+            <li><a href="Contactos.html"  target="_blank">contacto</a></li>
+            <li><a href="https://www.vidaextra.com/tag/metal-gear-solid"  target="_blank">blog</a></li>
+         </ul>
+    </nav>
+    
+    <div class="clearfix"></div> <!--para que los elementos se queden en su lugar (no floten hacia la caja de arriba)-->
+
+    <section id="content" >
+
+            <!--article style="border: 3px rgb(231, 151, 211) solid; background-color: rgb(243, 165, 219);"-->
+
+            <h1 align="center"><font size="6" face="Arial" color="white">PLATAFORMAS CON MAYORES VENTAS</font> </h1>
+
+        <article class="articulo" >
+        <h2>SWITCH</h2>
+        <p>Switch fue la consola más vendida con 346.799 unidades en la semana terminada el 27 de agosto de 2022,
+        según estiman desde VGChartz. Ahora las ventas totales en la vida de la consola son de 112,08 millones.</p>
+        </article>
+
+        <article class="articulo">
+        <h2>PLAY 5</h2>
+        <p> PlayStation 5 vendió unas 235.286 unidades estimadas, llevando su total a 22,71 millones. 
+        Por su parte Xbox Series X|S ha vendido 189.984 consolas llevando su total a las 16,69 millones.</p>
+        </article>
+
+        <article class="articulo">
+            <h2>XBOX SERIES</h2>
+            <p>En noviembre de 2020 llegaron las nuevas consolas de Microsoft, Xbox Series X|S, con el objetivo de superar el rendimiento 
+            comercial de Xbox One (que alcanzó los 50 millones de unidades vendidas) y seguir sumando suscriptores a Xbox Game Pass.</p>
+
+        </article>
+
+        <article class="articulo">
+            <h2>PC</h2>
+            <p>Por su parte las ventas de PC son mucho mayores superando con creces las 3 mencionadas anteriormente por lo que pc puede correr
+            cualquier tipo de juego de cualquier plataforma mencionada anteriormente.
+            
+            </p>
+        </article>
+
+    </section>
+
+    <aside>  <!--semanticamente representa una caja lateral-->
+         <h1>Busquedas</h1>
+         <form>
+            <input type="text">
+            <input type="submit" value="Buscar" >
+         </form>
+    </aside>
+    
+    <div class="clearfix"></div>
+
+    <footer>
+    <p><marquee width=70%  scrolldelay="75-50-25">Los juegos nos desafían para un mejor uso de nuestras fortalezas y eliminan el miedo al fracaso, mejorando nuestras posibilidades de éxito. 
+    Los buenos juegos apoyan la cooperación social y la participación cívica a gran escala.</marquee></p>
+    </footer>
+    
+    <!-- &nbsp;  un espaciado entre caracteres-->
+
+     </div>
+     <script src="main.js"></script>
+</body>
+</html>
